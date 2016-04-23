@@ -42,27 +42,26 @@ public class PlayerController : MonoBehaviour {
 		isSnow = true;
 		isJump = false;
 		outOfScreen = new Vector3 (-40f, 0f, 0f);
+
+		Scene scene = SceneManager.GetActiveScene(); 
+
+		if (scene.name == "Level1_Debug") {
+			ballRadius = 0.5f;
+			jumpSpeed = 15f;
+			MaxSpeed = 5f;
+		}
+		else {
+			ballRadius = 2f;
+			jumpSpeed =26f;
+			MaxSpeed = 18f;
+		}
+
 	}
 
 	// Use this for initialization
 	void Start () {
-
-		Scene scene = SceneManager.GetActiveScene(); 
-
-		if (scene.name == "Level3") {
-			ballRadius = 0.25f;
-			jumpSpeed =10f;
-			MaxSpeed = 10f;
-		}
-		else {
-			ballRadius = 2f;
-			jumpSpeed =25f;
-			MaxSpeed = 15f;
-		}
-
 		//rb2d.drag = 0.5f;
 		m_Grounded=false;
-
 
 		speedFactor = 5f;
 		i = 0;

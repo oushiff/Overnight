@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class CameraFollow : MonoBehaviour {
 
@@ -17,8 +19,21 @@ public class CameraFollow : MonoBehaviour {
 	public HeroTransform heroTransform;
 	private bool isCloudCamera = false;
 
+	public float YOffset;
+
 	void Awake(){
         isCloudCamera = false ;
+
+		Scene scene = SceneManager.GetActiveScene(); 
+
+		if (scene.name == "Level1_Debug") {
+			YOffset = 2f;
+		}
+		else {
+			YOffset = 5f;
+		}
+
+
 	}
 
 	void Start () {
@@ -49,7 +64,7 @@ public class CameraFollow : MonoBehaviour {
 
 //		Debug.Log (transform == null, player == null);		
 		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y + 5f, ref velocity.y, smoothTimeY);
+		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y + YOffset, ref velocity.y, smoothTimeY);
 
 		transform.position = new Vector3 (posX, posY,transform.position.z);
 

@@ -29,19 +29,22 @@ public class CloudController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> ();
 		isCloud = false;
 		outOfScreen = new Vector3 (-40f, 0f, 0f);
-	}
 
-	void Start () {
 		Scene scene = SceneManager.GetActiveScene(); 
 
 		if (scene.name == "Level1_Debug") {
-			ballRadius = 1f;
-			MaxSpeed =5f;
+			ballRadius = 0.5f;
+			MaxSpeed =2f;
 		}
 		else {
 			ballRadius = 2f;
 			MaxSpeed =8f;
 		}
+
+	}
+
+	void Start () {
+		
 		//rb2d.drag = 0.5f;
 		m_Grounded=false;
 
