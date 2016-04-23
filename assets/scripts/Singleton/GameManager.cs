@@ -220,4 +220,10 @@ public class GameManager : Singleton<GameManager> {
 	public void ResetLoseGame(){
 		isLose = false;
 	}
+
+
+	public bool isCameraFix = false;
+
+	public bool isCameraReturn = false;
+
 }

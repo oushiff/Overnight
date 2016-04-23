@@ -77,6 +77,8 @@
      <Compile Include="assets\scripts\PlayerController.cs" />
      <Compile Include="assets\scripts\Singleton\EndGame.cs" />
      <Compile Include="assets\scripts\Singleton\GameManager.cs" />
+     <Compile Include="assets\scripts\Singleton\GlobalSingleton.cs" />
+     <Compile Include="assets\scripts\Singleton\ScoreManager.cs" />
      <Compile Include="assets\scripts\Singleton\Singleton.cs" />
      <Compile Include="assets\scripts\VirtualJoystick.cs" />
      <Compile Include="assets\scripts\WaterWheelController1.cs" />

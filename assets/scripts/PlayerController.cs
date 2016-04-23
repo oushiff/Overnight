@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 
 		Scene scene = SceneManager.GetActiveScene(); 
 
-		if (scene.name == "Level1_Debug") {
+		if (scene.name == "Level1_TiledMap") {
 			ballRadius = 0.5f;
 			jumpSpeed = 15f;
 			MaxSpeed = 5f;
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
 		if (isSnow)
 			lastPosition = transform.position;
 		
-		if (isSnowClick) {
+		if (isSnowClick && GameManager.Instance.isCameraFix) {
 			heroTransform.isSnowTransform = false;
 			isSnowClick = false;
 			isSnow = !isSnow;
@@ -103,6 +103,8 @@ public class PlayerController : MonoBehaviour {
 				GameManager.Instance.Status = "PlayerSnow";
 				//GameObject.Instantiate(cloudObject,transform.position/* new Vector3(5.6f,12.5f,0f)*/,Quaternion.identity);
 			}
+			GameManager.Instance.isCameraFix = false;
+			GameManager.Instance.isCameraReturn = true;
 		}
 
 		if (!isSnow) {

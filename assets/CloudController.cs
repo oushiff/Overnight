@@ -32,7 +32,7 @@ public class CloudController : MonoBehaviour {
 
 		Scene scene = SceneManager.GetActiveScene(); 
 
-		if (scene.name == "Level1_Debug") {
+		if (scene.name == "Level1_TiledMap") {
 			ballRadius = 0.5f;
 			MaxSpeed =2f;
 		}
@@ -62,7 +62,7 @@ public class CloudController : MonoBehaviour {
 		if (isCloud)
 			lastPosition = transform.position;
 		
-		if (isBtnClick) {
+		if (isBtnClick && GameManager.Instance.isCameraFix) {
 			heroTransform.isCloudTransform = false;
 			isBtnClick = false;
 			isCloud = !isCloud;
@@ -70,6 +70,8 @@ public class CloudController : MonoBehaviour {
 				Debug.Log ("Cloud Disappear!!!!");
 				//cloudObject.SetActive (false);
 				//Destroy(cloudObject);
+
+
 				GameManager.Instance.Status = "PlayerSnow";
                 transform.position = outOfScreen;
 			} else {
@@ -80,7 +82,8 @@ public class CloudController : MonoBehaviour {
 				transform.position = playerController.lastPosition;
 				//GameObject.Instantiate(cloudObject,transform.position/* new Vector3(5.6f,12.5f,0f)*/,Quaternion.identity);
 			}
-
+			GameManager.Instance.isCameraFix = true;
+			GameManager.Instance.isCameraReturn = true;
 		}
 
 		if (!isCloud) {

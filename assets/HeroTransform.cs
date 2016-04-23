@@ -25,6 +25,8 @@ public class HeroTransform : MonoBehaviour {
 		Debug.Log ("+++snow OnClick!!" + isSnowTransform);
 		Debug.Log ("+++cloud OnClick!!" + isCloudTransform);
 
+		GameManager.Instance.isCameraFix = true;
+
 		isCameraChange = !isCameraChange;
 
 	}
