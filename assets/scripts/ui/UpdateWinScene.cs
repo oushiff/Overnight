@@ -22,6 +22,7 @@ public class UpdateWinScene : MonoBehaviour {
     
     void Start()
     {
+		Debug.Log (FormatTime(ScoreManager.Instance.TimeConsumed)+"!!!!!");
 		timerLabel.text = "Time: " + FormatTime(ScoreManager.Instance.TimeConsumed);
 		coinsLabel.text = "Coins:" + ScoreManager.Instance.CoinsGot.ToString();
     }

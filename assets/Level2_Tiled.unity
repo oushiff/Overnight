@@ -12998,6 +12998,7 @@ GameObject:
   - 114: {fileID: 1189055651}
   - 114: {fileID: 1189055650}
   - 114: {fileID: 1189055652}
+  - 114: {fileID: 1189055653}
   m_Layer: 0
   m_Name: CloudBall
   m_TagString: PlayerCloud
@@ -13163,6 +13164,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd51c2bc2983344f2a6d2bcbf59ad270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1189055653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189055644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335c6eddd67bf422baac6fbbc5a4d791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 10
+  counting: 0
+  blinkTime: 0.2
 --- !u!1 &1194609083
 GameObject:
   m_ObjectHideFlags: 0
@@ -22008,6 +22023,7 @@ GameObject:
   - 114: {fileID: 2063387600}
   - 114: {fileID: 2063387599}
   - 114: {fileID: 2063387605}
+  - 114: {fileID: 2063387606}
   m_Layer: 0
   m_Name: SnowBall
   m_TagString: PlayerSnow
@@ -22143,6 +22159,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd51c2bc2983344f2a6d2bcbf59ad270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2063387606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063387597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335c6eddd67bf422baac6fbbc5a4d791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 10
+  counting: 0
+  blinkTime: 0.2
 --- !u!1 &2075687176
 GameObject:
   m_ObjectHideFlags: 0

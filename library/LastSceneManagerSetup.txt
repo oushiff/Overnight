@@ -1,4 +1,4 @@
 sceneSetups:
-- path: assets/Level1_TiledMap.unity
+- path: assets/WinPage.unity
   isLoaded: 1
   isActive: 1
