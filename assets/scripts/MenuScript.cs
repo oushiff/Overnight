@@ -15,11 +15,11 @@ public class MenuScript : MonoBehaviour
 
 	{
 		//quitMenu = quitMenu.GetComponent<Canvas>();
-		startText = startText.GetComponent<Button> ();
-		exitText = exitText.GetComponent<Button> ();
-		levelMenu = levelMenu.GetComponent<Canvas> ();
-		quitMenu.enabled = false;
-		levelMenu.enabled = false;
+		//startText = startText.GetComponent<Button> ();
+		//exitText = exitText.GetComponent<Button> ();
+		//levelMenu = levelMenu.GetComponent<Canvas> ();
+		//quitMenu.enabled = false;
+		//levelMenu.enabled = false;
 
 	}
 

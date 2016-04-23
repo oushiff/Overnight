@@ -140,11 +140,19 @@ public class GameManager : Singleton<GameManager> {
 		}
 	}
 
+	private void UpdateScore(){
+		ScoreManager.Instance.CoinsGot = _coinsGot;
+		ScoreManager.Instance.TimeConsumed = _timeConsumed;
+		Debug.Log ("ScoreManager Coin: " + ScoreManager.Instance.CoinsGot);
+		Debug.Log ("ScoreManager Time: " + ScoreManager.Instance.TimeConsumed);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		HealthCheck ();
 
 		TimeRemaining -= Time.deltaTime;
+
 
 		if (TimeRemaining <= 0) {
 			//RestartGame ();
@@ -156,8 +164,8 @@ public class GameManager : Singleton<GameManager> {
 		if (InvincibleTime > 0 && Invincible == true) {
 			InvincibleTime -= Time.deltaTime;
 
-			Debug.Log (Invincible);
-			Debug.Log (InvincibleTime);
+			//Debug.Log (Invincible);
+			//Debug.Log (InvincibleTime);
 
 			if (InvincibleTime <= 0) {
 				InvincibleTime = 0f;
@@ -176,6 +184,8 @@ public class GameManager : Singleton<GameManager> {
 //				_bleeding = false;
 //			}
 //		}
+		UpdateScore();
+
 	}
 
 	void FixedUpdate(){
