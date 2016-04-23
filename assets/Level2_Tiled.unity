@@ -8709,6 +8709,7 @@ TrailRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -13497,7 +13498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7cd2ef6a8164d2287f9757743b6a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDecrease: 20
+  healthDecrease: 5
 --- !u!212 &1237072545
 SpriteRenderer:
   m_ObjectHideFlags: 0

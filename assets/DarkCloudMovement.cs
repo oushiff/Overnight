@@ -44,12 +44,15 @@ public class DarkCloudMovement : MonoBehaviour {
 		
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log ("Dark Cloud Collision!!!");
-		if (other.tag == "PlayerCloud" || other.tag == "PlayerSnow") {
+		if (other.gameObject.tag == "PlayerCloud") {
 			// Dis-appear 
-			Disappear(3.0f);
+			//Disappear(3.0f);
 			// wait 3 seconds
 			//reload
-			GameManager.Instance.DecreaseHealth(30f);
+			if (GameManager.Instance.Bleeding == false) {
+				GameManager.Instance.Bleeding = true;
+				GameManager.Instance.DecreaseHealth (30f);
+			}
 
 		}
 		//GameManager.Instance.RestartGame ();

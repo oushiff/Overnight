@@ -5,7 +5,7 @@ public class Jag : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collider2d)
 	{
-		if (collider2d.gameObject.tag == "PlayerSnow" || collider2d.gameObject.tag == "PlayerCloud")
+		if (collider2d.gameObject.tag == "PlayerSnow" )
 		{
 			GetAttacked();
 		}
@@ -18,9 +18,10 @@ public class Jag : MonoBehaviour {
 	private void GetAttacked()
 	{
 		//GameManager.Instance.Health -= healthDecrease;
-
-		GameManager.Instance.DecreaseHealth(healthDecrease);
-
+		if (GameManager.Instance.Bleeding == false) {
+			GameManager.Instance.Bleeding = true;
+			GameManager.Instance.DecreaseHealth (healthDecrease);
+		}
 		/*
 		if (GameManager.Instance.Health <= 0) {
 			//GameManager.Instance.RestartGame ();
