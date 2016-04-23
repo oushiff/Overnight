@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/scripts/coins and enemy/Jag.cs">
+    <Files>
+      <File FileName="assets/panel.cs" Line="5" Column="8" />
+      <File FileName="assets/scripts/Singleton/GameManager.cs" Line="171" Column="5" />
+      <File FileName="assets/scripts/Singleton/EndGame.cs" Line="11" Column="37" />
+      <File FileName="assets/healthbarController.cs" Line="17" Column="37" />
+      <File FileName="assets/scripts/coins and enemy/Enemy/Enemy.cs" Line="58" Column="4" />
+      <File FileName="assets/panelBtn.cs" Line="20" Column="37" />
+      <File FileName="assets/scripts/MenuScript.cs" Line="68" Column="29" />
+      <File FileName="assets/scripts/Character/Blinking.cs" Line="36" Column="17" />
+      <File FileName="assets/scripts/coins and enemy/Jag.cs" Line="21" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
