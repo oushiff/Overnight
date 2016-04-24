@@ -2387,8 +2387,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183911321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 312.2, y: -12.2, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 312.16, y: -12.45, z: 0}
+  m_LocalScale: {x: 4.8792233, y: 5.8176517, z: 1}
   m_Children: []
   m_Father: {fileID: 1647690656}
   m_RootOrder: 1
@@ -5772,7 +5772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &532442117
 Transform:
   m_ObjectHideFlags: 0
@@ -13633,8 +13633,8 @@ GameObject:
   - 4: {fileID: 1258153680}
   - 212: {fileID: 1258153686}
   - 50: {fileID: 1258153685}
-  - 60: {fileID: 1258153683}
   - 114: {fileID: 1258153681}
+  - 60: {fileID: 1258153682}
   m_Layer: 0
   m_Name: DarkCloud
   m_TagString: Untagged
@@ -13672,7 +13672,7 @@ MonoBehaviour:
   delay: 2
   maxSpeed: 5
   moveVec: {x: 0, y: 0}
---- !u!60 &1258153683
+--- !u!60 &1258153682
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -13680,7 +13680,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1258153679}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 7a522daa06bf940678cbb01da5e84b62, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}

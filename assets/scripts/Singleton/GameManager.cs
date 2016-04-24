@@ -192,7 +192,7 @@ public class GameManager : Singleton<GameManager> {
 
 		if (Status == "PlayerCloud" && Invincible == false) 
 		{
-			Debug.Log("PlayerCloud Heath:" + Health);
+			//Debug.Log("PlayerCloud Heath:" + Health);
 			//Health -= CloudStateHeathMinusValue;
 			Health -= 0.05f;
 		}

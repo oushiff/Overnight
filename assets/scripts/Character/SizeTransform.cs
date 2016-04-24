@@ -13,7 +13,7 @@ public class SizeTransform : MonoBehaviour {
 	void Update () {
 		
 		float multiplier = GameManager.Instance.Health / 100f;
-		Debug.Log (multiplier);
+		//Debug.Log (multiplier);
 		if (multiplier > 0.2f) {
 			Vector3 velocity = Vector3.zero;
 			transform.localScale = Vector3.SmoothDamp(gameObject.transform.localScale, originalScale * multiplier, ref velocity, 0.1f);

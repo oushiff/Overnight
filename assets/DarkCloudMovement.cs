@@ -42,13 +42,14 @@ public class DarkCloudMovement : MonoBehaviour {
 		rb2d.velocity = moveVec;
 	}
 		
-	void OnTriggerEnter2D(Collider2D other){
+	void OnCollisionEnter2D(Collision2D other){
 		Debug.Log ("Dark Cloud Collision!!!");
-		if (other.gameObject.tag == "PlayerCloud") {
+		if (other.gameObject.tag == "PlayerCloud" ) {
 			// Dis-appear 
 			//Disappear(3.0f);
 			// wait 3 seconds
 			//reload
+			Debug.Log("PlayerCloud111111");
 			if (GameManager.Instance.Bleeding == false) {
 				GameManager.Instance.Bleeding = true;
 				GameManager.Instance.DecreaseHealth (30f);
@@ -59,14 +60,14 @@ public class DarkCloudMovement : MonoBehaviour {
 		//else currentState.OnTriggerEnter(other);
 	}
 
-	private void Disappear(float hideTime) {
-		GetComponent<Renderer> ().enabled = false;
-		float duration = 0f;
-
-		while (duration < hideTime) {
-			duration += Time.deltaTime;
-
-		}
-		GetComponent<Renderer> ().enabled = true;
-	}
+//	private void Disappear(float hideTime) {
+//		GetComponent<Renderer> ().enabled = false;
+//		float duration = 0f;
+//
+//		while (duration < hideTime) {
+//			duration += Time.deltaTime;
+//
+//		}
+//		GetComponent<Renderer> ().enabled = true;
+//	}
 }
