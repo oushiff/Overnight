@@ -65,7 +65,7 @@ public class MenuScript : MonoBehaviour
 
 	public void StartLevel2()
 	{
-		SceneManager.LoadScene ("level2backup");
+		SceneManager.LoadScene ("Level2_Tiled");
 	}
 
 	public void StartLevel3()

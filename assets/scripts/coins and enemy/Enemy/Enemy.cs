@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Enemy : Character {
 
@@ -7,6 +8,16 @@ public class Enemy : Character {
 	private IEnemyState currentState;
 	 
 	public GameObject target{get; set;} 
+
+	public float fireSize;
+
+	public void Awake(){
+		if (SceneManager.GetActiveScene ().name == "Level1_TiledMap") {
+			fireSize = 1f;
+		} else {
+			fireSize = 2f;
+		}
+	}
 
 	// Use this for initialization
 	public override void Start () {
@@ -45,12 +56,12 @@ public class Enemy : Character {
 	public void Move(){
 		MyAnimator.SetFloat ("speed", 1);
 
-		transform.Translate (GetDirection () * movementSpeed * Time.deltaTime);
+		transform.Translate (new Vector3(GetDirection () * movementSpeed * Time.deltaTime, 0, 0));
 	}
 
-	public Vector2 GetDirection(){
+	public float GetDirection(){
 
-		return facingRight ? Vector2.right : Vector2.left;
+		return facingRight ? -1f : 1f;
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

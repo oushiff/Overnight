@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SizeTransform : MonoBehaviour {
 
-	private Vector3 originalScale = new Vector3 (0.55f, 0.55f, 0.55f); 
+	private Vector3 originalScale;// = new Vector3 (0.55f, 0.55f, 0.55f); 
 	// Use this for initialization
 	void Start () {
 		originalScale = transform.localScale;

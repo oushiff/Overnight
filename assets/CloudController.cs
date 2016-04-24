@@ -72,8 +72,9 @@ public class CloudController : MonoBehaviour {
 				//Destroy(cloudObject);
 
 				GameManager.Instance.Status = "PlayerSnow";
-                transform.position = outOfScreen;
 				transform.FindChild("CloudTrail").GetComponent<TrailRenderer>().enabled = false;
+                transform.position = outOfScreen;
+
 			} else {
 				Debug.Log ("Cloud re-appear!!!!");
 				//GameObject cloudObject = GameObject.Find ("CloudBall");
