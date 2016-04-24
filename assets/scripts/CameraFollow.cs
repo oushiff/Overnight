@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour {
 		Scene scene = SceneManager.GetActiveScene(); 
 
 		if (scene.name == "Level1_TiledMap") {
-			YOffset = 2f;
+			YOffset = 1f;
 		}
 		else {
 			YOffset = 5f;

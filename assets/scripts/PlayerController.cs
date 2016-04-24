@@ -47,8 +47,8 @@ public class PlayerController : MonoBehaviour {
 
 		if (scene.name == "Level1_TiledMap") {
 			ballRadius = 0.5f;
-			jumpSpeed = 15f;
-			MaxSpeed = 5f;
+			jumpSpeed = 11f;
+			MaxSpeed = 3.5f;
 		}
 		else {
 			ballRadius = 2f;
