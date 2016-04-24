@@ -17,6 +17,7 @@ public class panelBtn : MonoBehaviour {
 		GameManager.Instance.RestartGame ();
 	}
 	public void onClickMenu(){
+		Time.timeScale = 1;
 		SceneManager.LoadScene ("StartPage");
 	}
 }
