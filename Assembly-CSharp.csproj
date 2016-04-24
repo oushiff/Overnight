@@ -56,6 +56,7 @@
      <Compile Include="assets\DarkCloudMovement.cs" />
      <Compile Include="assets\HeroJump.cs" />
      <Compile Include="assets\HeroTransform.cs" />
+     <Compile Include="assets\IceTop.cs" />
      <Compile Include="assets\LevelSelectManager.cs" />
      <Compile Include="assets\LockLevel.cs" />
      <Compile Include="assets\PlayerMovement.cs" />
