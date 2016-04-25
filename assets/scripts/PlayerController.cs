@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour {
 			MaxSpeed = 2f;
 		}
 		else {
-			ballRadius = 2f;
-			jumpSpeed =26f;
+			ballRadius = 1.7f;
+			jumpSpeed =40f;
 			MaxSpeed = 18f;
 		}
 
