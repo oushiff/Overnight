@@ -4968,7 +4968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1233861776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5419,7 +5419,6 @@ MonoBehaviour:
   movementSpeed: 1
   facingRight: 1
   knifePrefab: {fileID: 0}
-  fireSize: 0
   enemySelf: {fileID: 1311808252}
 --- !u!114 &1311808255
 MonoBehaviour:
@@ -7562,7 +7561,6 @@ MonoBehaviour:
   movementSpeed: 1
   facingRight: 1
   knifePrefab: {fileID: 0}
-  fireSize: 0
   enemySelf: {fileID: 1694620732}
 --- !u!114 &1694620735
 MonoBehaviour:

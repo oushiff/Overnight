@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour {
 	public float smoothTimeY;
 	public float smoothTimeX;
 
+	//[SerializeField]
 	public GameObject player;
 
 	public bool bounds;
