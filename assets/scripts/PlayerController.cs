@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour {
 		rb2d.velocity = new Vector2 (movement.x , rb2d.velocity.y);
 
 		//jump
-		Collider2D[] colliders = Physics2D.OverlapCircleAll(rb2d.position, ballRadius);
+		Collider2D[] colliders = Physics2D.OverlapCircleAll(rb2d.position, ballRadius,LayerMask.GetMask("surface"));
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
 
 //		for (int i = 0; i < colliders.Length; i++)
@@ -162,7 +162,7 @@ public class PlayerController : MonoBehaviour {
 //		}
 		
 		
-		if (colliders.Length > 1) {
+		if (colliders.Length >= 1) {
 			m_Grounded = true;
 			//Debug.Log("colliders.Length = " + colliders.Length);
 		} else {
