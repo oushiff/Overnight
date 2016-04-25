@@ -28,14 +28,14 @@ public class CircleFireController : MonoBehaviour {
 			// health decrease
 			heroTransform.OnClick ();
 
+		}
+
+		if (other.gameObject.tag == "PlayerSnow" || other.gameObject.tag == "PlayerCloud") {
 			if (GameManager.Instance.Bleeding == false) {
 				GameManager.Instance.Bleeding = true;
 				GameManager.Instance.DecreaseHealth (5f);
 			}
-
-
 		}
-
 
 
 			//GameManager.Instance.RestartGame ();
