@@ -28,7 +28,7 @@ public class CloudController : MonoBehaviour {
 	void Awake(){
 		rb2d = GetComponent<Rigidbody2D> ();
 		isCloud = false;
-		outOfScreen = new Vector3 (-40f, 0f, 0f);
+		outOfScreen = new Vector3 (-400f, 400f, 0f);
 
 		Scene scene = SceneManager.GetActiveScene(); 
 
