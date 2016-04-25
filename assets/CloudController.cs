@@ -20,7 +20,7 @@ public class CloudController : MonoBehaviour {
 	private bool isCloud = false;
 	public float ballRadius;
 
-	private Vector3 outOfScreen;
+	private float outOfScreenY;
 	public PlayerController playerController;
 	public Vector3 lastPosition;
 
@@ -28,7 +28,9 @@ public class CloudController : MonoBehaviour {
 	void Awake(){
 		rb2d = GetComponent<Rigidbody2D> ();
 		isCloud = false;
-		outOfScreen = new Vector3 (-400f, 400f, 0f);
+		//outOfScreen = new Vector3 (0f, -40f, 0f);
+		outOfScreenY = -40f;
+
 
 		Scene scene = SceneManager.GetActiveScene(); 
 
@@ -73,7 +75,7 @@ public class CloudController : MonoBehaviour {
 
 				GameManager.Instance.Status = "PlayerSnow";
 				transform.FindChild("CloudTrail").GetComponent<TrailRenderer>().enabled = false;
-                transform.position = outOfScreen;
+				transform.position = new Vector3(playerController.lastPosition.x, outOfScreenY, 0);
 
 			} else {
 				Debug.Log ("Cloud re-appear!!!!");
@@ -89,7 +91,7 @@ public class CloudController : MonoBehaviour {
 		}
 
 		if (!isCloud) {
-			transform.position = outOfScreen;
+			transform.position = new Vector3(playerController.lastPosition.x, outOfScreenY, 0);
 			return;
 		}
 

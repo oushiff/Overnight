@@ -41,9 +41,18 @@ public class DarkCloudMovement : MonoBehaviour {
 	void FixedUpdate () {
 		rb2d.velocity = moveVec;
 	}
-		
-	void OnCollisionEnter2D(Collision2D other){
+
+	void OnTriggerEnter2D(Collider2D other) {
 		Debug.Log ("Dark Cloud Collision!!!");
+			
+		if (other.gameObject.tag == "dcTB") {
+			moveVec.y = -moveVec.y;
+		}
+
+		if (other.gameObject.tag == "dcLR") {
+			moveVec.x = -moveVec.x;
+		}
+
 		if (other.gameObject.tag == "PlayerCloud" ) {
 			// Dis-appear 
 			//Disappear(3.0f);
@@ -59,6 +68,7 @@ public class DarkCloudMovement : MonoBehaviour {
 		//GameManager.Instance.RestartGame ();
 		//else currentState.OnTriggerEnter(other);
 	}
+
 
 //	private void Disappear(float hideTime) {
 //		GetComponent<Renderer> ().enabled = false;

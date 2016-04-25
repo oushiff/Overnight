@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 	private bool isSnow = true;
 	private bool isJump = false;
 
-	private Vector3 outOfScreen;
+	private float outOfScreenY;
 	public CloudController cloudController;
 	public Vector3 lastPosition;
 
@@ -41,7 +41,8 @@ public class PlayerController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> ();
 		isSnow = true;
 		isJump = false;
-		outOfScreen = new Vector3 (-400f, 400f, 0f);
+		//outOfScreen = new Vector3 (0f, -40f, 0f);
+		outOfScreenY = -40f;
 
 		Scene scene = SceneManager.GetActiveScene(); 
 
@@ -94,7 +95,7 @@ public class PlayerController : MonoBehaviour {
 				//cloudObject.SetActive (false);
 				//Destroy(cloudObject);
 				GameManager.Instance.Status = "PlayerCloud";
-				transform.position = outOfScreen;
+				transform.position = new Vector3(cloudController.lastPosition.x, outOfScreenY, 0);
 			} else {
 				Debug.Log ("Snow re-appear!!!!");
 				//GameObject cloudObject = GameObject.Find ("CloudBall");
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (!isSnow) {
-			transform.position = outOfScreen;
+			transform.position = new Vector3(cloudController.lastPosition.x, outOfScreenY, 0);
 			return;
 		}
 

@@ -8,6 +8,8 @@ TagManager:
   - PlayerSnow
   - Patrol Edge
   - Surface
+  - dcTB
+  - dcLR
   layers:
   - Default
   - TransparentFX
