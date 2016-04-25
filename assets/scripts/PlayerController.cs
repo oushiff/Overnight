@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour {
 		Scene scene = SceneManager.GetActiveScene(); 
 
 		if (scene.name == "Level1_TiledMap") {
-			ballRadius = 0.5f;
-			jumpSpeed = 11f;
-			MaxSpeed = 3.5f;
+			ballRadius = 0.2f;
+			jumpSpeed = 8f;
+			MaxSpeed = 2f;
 		}
 		else {
 			ballRadius = 2f;
