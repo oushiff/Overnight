@@ -11,16 +11,25 @@ public class Jag : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionStay2D(Collision2D collider2d)
+	{
+		if (collider2d.gameObject.tag == "PlayerSnow" )
+		{
+			GetAttacked();
+		}
+	}
+	 
 
 	[SerializeField]
-	private float healthDecrease = 20;
+	private float healthDecrease = 10;
 
 	private void GetAttacked()
 	{
 		//GameManager.Instance.Health -= healthDecrease;
 		if (GameManager.Instance.Bleeding == false) {
-			GameManager.Instance.Bleeding = true;
+			
 			GameManager.Instance.DecreaseHealth (healthDecrease);
+			GameManager.Instance.Bleeding = true;
 		}
 		/*
 		if (GameManager.Instance.Health <= 0) {

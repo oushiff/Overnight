@@ -130,7 +130,8 @@ public class GameManager : Singleton<GameManager> {
 
 	public void DecreaseHealth(float DecreaseValue){
 		//EnableBleeding ();
-		Health -= DecreaseValue;
+		if (Bleeding == false)
+			Health -= DecreaseValue;
 	}
 
 	private void HealthCheck(){
