@@ -34,7 +34,7 @@ public class CloudController : MonoBehaviour {
 
 		if (scene.name == "Level1_TiledMap") {
 			ballRadius = 0.3f;
-			MaxSpeed =2f;
+			MaxSpeed =1.2f;
 		}
 		else {
 			ballRadius = 2f;
