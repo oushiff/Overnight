@@ -28,6 +28,12 @@ public class CircleFireController : MonoBehaviour {
 			// health decrease
 			heroTransform.OnClick ();
 		}
+
+		if (GameManager.Instance.Bleeding == false) {
+			GameManager.Instance.Bleeding = true;
+			GameManager.Instance.DecreaseHealth (5f);
+		}
+
 			//GameManager.Instance.RestartGame ();
 		//else currentState.OnTriggerEnter(other);
 	}

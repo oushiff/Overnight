@@ -152,15 +152,15 @@ public class PlayerController : MonoBehaviour {
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(rb2d.position, ballRadius);
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
 
-		//		for (int i = 0; i < colliders.Length; i++)
-		//		{
-		//			if (colliders [i].gameObject != gameObject) {
-		//				m_Grounded = true;
-		//				break;
-		//			}
-		//		}
-		//
-		//
+//		for (int i = 0; i < colliders.Length; i++)
+//		{
+//			if (colliders [i].gameObject != gameObject) {
+//				m_Grounded = true;
+//				break;
+//			}
+//		}
+		
+		
 		if (colliders.Length > 1) {
 			m_Grounded = true;
 			//Debug.Log("colliders.Length = " + colliders.Length);

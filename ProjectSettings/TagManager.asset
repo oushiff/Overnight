@@ -7,6 +7,7 @@ TagManager:
   - PlayerCloud
   - PlayerSnow
   - Patrol Edge
+  - Surface
   layers:
   - Default
   - TransparentFX
