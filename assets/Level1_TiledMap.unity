@@ -358,9 +358,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1233861776}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -616.80005, y: 222.39998}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50.19995, y: -150.1}
   m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35426908
@@ -650,7 +650,7 @@ GameObject:
   - 212: {fileID: 77285846}
   - 114: {fileID: 77285845}
   - 60: {fileID: 77285844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3171,7 +3171,7 @@ GameObject:
   - 224: {fileID: 350575349}
   - 212: {fileID: 350575348}
   - 60: {fileID: 350575350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3223,7 +3223,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -3.92, y: 10.11}
-  m_SizeDelta: {x: 100, y: 1.8}
+  m_SizeDelta: {x: 1.9, y: 0.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!60 &350575350
 PolygonCollider2D:
@@ -3361,7 +3361,7 @@ GameObject:
   - 4: {fileID: 359515657}
   - 212: {fileID: 359515658}
   - 60: {fileID: 359515659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 12board (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5406,7 +5406,7 @@ GameObject:
   - 4: {fileID: 458356553}
   - 212: {fileID: 458356555}
   - 60: {fileID: 458356554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5941,7 +5941,7 @@ GameObject:
   - 4: {fileID: 531028272}
   - 212: {fileID: 531028274}
   - 60: {fileID: 531028273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7202,7 +7202,7 @@ GameObject:
   - 4: {fileID: 805449667}
   - 212: {fileID: 805449669}
   - 60: {fileID: 805449668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9324,7 +9324,7 @@ GameObject:
   - 4: {fileID: 892878496}
   - 212: {fileID: 892878498}
   - 60: {fileID: 892878497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9500,7 +9500,7 @@ GameObject:
   - 4: {fileID: 918648059}
   - 212: {fileID: 918648061}
   - 60: {fileID: 918648060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9815,7 +9815,7 @@ GameObject:
   - 114: {fileID: 980636605}
   - 60: {fileID: 980636604}
   - 61: {fileID: 980636603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floatingWood1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10058,7 +10058,7 @@ GameObject:
   - 4: {fileID: 1023419439}
   - 212: {fileID: 1023419438}
   - 60: {fileID: 1023419440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14380,7 +14380,7 @@ GameObject:
   - 4: {fileID: 1520888410}
   - 212: {fileID: 1520888412}
   - 60: {fileID: 1520888411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14822,7 +14822,7 @@ GameObject:
   - 4: {fileID: 1625381462}
   - 212: {fileID: 1625381464}
   - 60: {fileID: 1625381463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15203,7 +15203,7 @@ GameObject:
   - 114: {fileID: 1636517906}
   - 60: {fileID: 1636517905}
   - 61: {fileID: 1636517904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floatingWood1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15420,7 +15420,7 @@ GameObject:
   - 212: {fileID: 1640422827}
   - 60: {fileID: 1640422826}
   - 114: {fileID: 1640422825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: waterWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15578,7 +15578,7 @@ GameObject:
   - 114: {fileID: 1661398045}
   - 60: {fileID: 1661398044}
   - 61: {fileID: 1661398043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floatingWood2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16492,7 +16492,7 @@ GameObject:
   - 4: {fileID: 1717584500}
   - 212: {fileID: 1717584502}
   - 60: {fileID: 1717584501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17049,7 +17049,7 @@ GameObject:
   - 4: {fileID: 1829519737}
   - 212: {fileID: 1829519739}
   - 60: {fileID: 1829519738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3board (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18784,7 +18784,7 @@ GameObject:
   - 212: {fileID: 1905133747}
   - 60: {fileID: 1905133746}
   - 114: {fileID: 1905133745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: waterWheel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19615,7 +19615,7 @@ GameObject:
   - 114: {fileID: 2011394245}
   - 60: {fileID: 2011394244}
   - 61: {fileID: 2011394243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floatingWood2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
