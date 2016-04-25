@@ -155,8 +155,8 @@ MonoBehaviour:
   smoothTimeX: 0.05
   player: {fileID: 0}
   bounds: 1
-  minCameraPos: {x: -6.25, y: 6.46, z: -1000}
-  maxCameraPos: {x: 25.6, y: 9.86, z: 1000}
+  minCameraPos: {x: -6.25, y: 9.86, z: -1000}
+  maxCameraPos: {x: 25.6, y: 13.11, z: 1000}
   heroTransform: {fileID: 378896738}
   YOffset: 0
 --- !u!81 &3664406
