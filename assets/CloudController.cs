@@ -33,7 +33,7 @@ public class CloudController : MonoBehaviour {
 		Scene scene = SceneManager.GetActiveScene(); 
 
 		if (scene.name == "Level1_TiledMap") {
-			ballRadius = 0.5f;
+			ballRadius = 0.3f;
 			MaxSpeed =2f;
 		}
 		else {
