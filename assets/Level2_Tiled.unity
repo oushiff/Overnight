@@ -3449,7 +3449,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bounds: 1
   minCameraPos: {x: 3.33, y: 3.9, z: -1000}
-  maxCameraPos: {x: 351.2, y: 30, z: 1000}
+  maxCameraPos: {x: 356.8, y: 30, z: 1000}
   heroTransform: {fileID: 1890232325}
   YOffset: 0
 --- !u!81 &215612961
@@ -3514,7 +3514,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215612959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: 16.5, z: -10}
+  m_LocalPosition: {x: 356.8, y: 3.9, z: -10}
   m_LocalScale: {x: 3.28, y: 2.5241773, z: 0.6378864}
   m_Children:
   - {fileID: 1236340728}
@@ -5795,7 +5795,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75.4, y: -147.7}
+  m_AnchoredPosition: {x: 76.6, y: -147.7}
   m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &396850843
@@ -5945,7 +5945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &414127638
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7690,7 +7690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &532442117
 Transform:
   m_ObjectHideFlags: 0
@@ -10689,9 +10689,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 414127638}
   m_RootOrder: 5
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -616.8, y: 222.4}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 51.4, y: -150}
   m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660434244
@@ -22587,7 +22587,7 @@ RectTransform:
   m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75.4, y: -147.7}
+  m_AnchoredPosition: {x: 76.6, y: -147.7}
   m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1418943702
